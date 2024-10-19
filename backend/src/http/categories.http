@@ -1,0 +1,41 @@
+GET http://localhost:3000/categories
+
+###
+
+GET http://localhost:3000/categories/1
+
+###
+
+GET http://localhost:3000/categories?name=voiture
+
+###
+
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name": "montre"
+}
+
+###
+
+PUT http://localhost:3000/categories/6
+Content-Type: application/json
+
+{
+    "name": "Montre"
+}
+
+###
+
+PATCH http://localhost:3000/categories/7
+Content-Type: application/json
+
+{
+    "name": "Montre",
+    "id": 8
+}
+
+###
+
+DELETE http://localhost:3000/categories/5

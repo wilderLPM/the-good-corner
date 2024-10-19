@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.form > input, .form > select {
+    width: 50%;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,56 @@
+.header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid lightgray;
+    padding: 15px;
+    background-color: white;
+}
+
+.mainMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color);
+}
+
+.form {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 4px;
+}
+
+.textInput {
+    height: 40px;
+    background-color: white;
+    padding: 8px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: inherit;
+    width: 100%;
+    min-width: 120px;
+    max-width: 360px;
+    flex-grow: 1;
+}
+
+.desktopLongLabel {
+    display: none;
+}
+
+.tgc {
+    font-size: 24px;
+}
+
+@media screen and (min-width: 720px) {
+    .mobileShortLabel {
+        display: none;
+    }
+    .desktopLongLabel {
+        display: initial;
+    }
+}

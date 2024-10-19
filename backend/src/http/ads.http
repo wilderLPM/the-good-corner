@@ -1,0 +1,57 @@
+GET http://localhost:3000
+
+###
+
+GET http://localhost:3000/ads
+
+###
+
+GET http://localhost:3000/ads?category=voiture
+
+###
+
+GET http://localhost:3000/ads/24
+
+###
+
+POST http://localhost:3000/ads
+Content-Type: application/json
+
+{
+    "title": "T-Shirt",
+    "description": "un beau t-shirt",
+    "price": 11000,
+    "picture": "t-shirt.jpg",
+    "location": "Lyon",
+    "category": 1
+}
+
+###
+
+PUT http://localhost:3000/ads/24
+Content-Type: application/json
+
+{
+  "id": 9,
+  "title": "Rolex",
+  "description": "une rolex en bon état",
+  "price": 4220000,
+  # "picture": "rox.jpg",
+  "location": "Oullins",
+  "created_at": "hahahahhah",
+  "category": 7
+}
+
+###
+
+PATCH http://localhost:3000/ads/25 
+Content-Type: application/json
+
+{
+    "location": "Villeurbanne",
+    "price": 25000
+}
+
+###
+
+DELETE http://localhost:3000/ads/23

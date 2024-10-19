@@ -1,0 +1,41 @@
+GET http://localhost:3000/tags
+
+###
+
+GET http://localhost:3000/tags/1
+
+###
+
+GET http://localhost:3000/tags?name=occ
+
+###
+
+POST http://localhost:3000/tags
+Content-Type: application/json
+
+{
+    "name": "occasion"
+}
+
+###
+
+PUT http://localhost:3000/tags/1
+Content-Type: application/json
+
+{
+    "name": "neuf"
+}
+
+###
+
+PATCH http://localhost:3000/tags/5
+Content-Type: application/json
+
+{
+    "location": "Villeurbanne",
+    "price": 25000
+}
+
+###
+
+DELETE http://localhost:3000/tags/1

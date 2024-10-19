@@ -1,0 +1,13 @@
+.mainContent { 
+  margin-top: 120px;
+    padding: 0 16px;
+    /* margin: 120px auto 48px; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+
+.mainContent > * {
+  flex: 1;
+}

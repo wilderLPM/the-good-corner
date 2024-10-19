@@ -1,0 +1,32 @@
+.categoriesNavigation {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    padding: 16px 10px 6px;
+    white-space: nowrap;
+    /* overflow-x: scroll; */
+}
+   
+.ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.categoryNavigationLink {
+    text-decoration: unset;
+    color: inherit;
+}
+
+.categoryNavigationLink:hover {
+    color: #ffa41b;
+}
+
+@media screen and (min-width: 720px) { 
+    .categoriesNavigation {
+        padding-top: 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
